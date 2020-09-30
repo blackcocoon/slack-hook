@@ -17,8 +17,8 @@ use JSON;
 # 한글 사용을 위해 추가
 use Encode qw(decode_utf8);
 
-my $opt_domain = "playground-iif3978.slack.com";
-my $opt_token = "ueGR4k1vlwgyssF13FPJig0F";
+my $opt_domain = "example.slack.com";
+my $opt_token = "{토큰}";
 
 # 한글 사용을 위해 변경
 my $log = `/usr/bin/svnlook log -r $ARGV[1] $ARGV[0]`;
