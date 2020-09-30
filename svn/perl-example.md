@@ -1,3 +1,9 @@
+
+# svn post-commit example
+
+filename : post-commit
+
+```perl
 #!/usr/bin/env perl
 
 use warnings;
@@ -41,3 +47,4 @@ print STDERR "Request:\n$s\n";
 my $resp = $ua->request($req);
 $s = $resp->as_string;
 print STDERR "Response:\n$s\n";
+```
