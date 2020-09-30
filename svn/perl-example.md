@@ -2,6 +2,11 @@
 # svn post-commit example
 
 filename : post-commit
+require perl module : 
+
+```sh
+yum install perl-libwww-perl perl-LWP-Protocol-https perl-URI
+```
 
 ```perl
 #!/usr/bin/env perl
