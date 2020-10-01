@@ -27,7 +27,8 @@ my $opt_domain = "example.slack.com";
 my $opt_token = "{토큰}";
 
 # 한글 사용을 위해 변경
-my $log = `/usr/bin/svnlook log -r $ARGV[1] $ARGV[0]`;
+#my $log = `/usr/bin/svnlook log -r $ARGV[1] $ARGV[0]`;
+my $log=qx|export LC_CTYPE="en_US.utf8"; /usr/bin/svnlook log -r $ARGV[1] $ARGV[0]|;
 $log = decode_utf8($log);
 
 #my $log = `/usr/bin/svnlook log -r $ARGV[1] $ARGV[0]`;
