@@ -6,6 +6,7 @@ filename : post-commit
 require perl module :   
 
 ```sh
+# CentOS 7
 yum install perl-libwww-perl perl-LWP-Protocol-https perl-URI
 ```
 
