@@ -32,7 +32,6 @@ my $opt_token = "{your token}";
 my $log=qx|export LC_CTYPE="en_US.utf8"; /usr/bin/svnlook log -r $ARGV[1] $ARGV[0]|;
 $log = decode_utf8($log);
 
-#my $log = `/usr/bin/svnlook log -r $ARGV[1] $ARGV[0]`;
 my $files = `/usr/bin/svnlook changed -r $ARGV[1] $ARGV[0]`;
 my $who = `/usr/bin/svnlook author -r $ARGV[1] $ARGV[0]`;
 my $url = "http://svn.dev/repos/kcx/?op=revision&rev=$ARGV[1]"; # optionally set this to the url of your internal commit browser. Ex: http://svnserver/wsvn/main/?op=revision&rev=$ARGV[1]
